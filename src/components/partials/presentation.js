@@ -11,7 +11,7 @@ export default function ComponentPresentation(){
         <section className={style.container}>
             <article className={style.slider}>
                 <div className={style.card}>
-                    <Image src="/images/breakfasts/img1.jpg" alt="Desayuno" width={700} height={700}/>
+                    <Image src="/images/breakfasts/img1.jpg" alt="Desayuno" priority={true} width={700} height={700}/>
                     <div className={style.description}>
                         <span>
                             DESAYUNO COMPLETO

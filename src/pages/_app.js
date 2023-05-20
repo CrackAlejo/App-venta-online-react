@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }) {
       <Client>
         <GlobalContextProvider>
           <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <title>Comidas lo mejor</title>
           </Head>
           <Component {...pageProps} />

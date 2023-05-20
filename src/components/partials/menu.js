@@ -26,7 +26,7 @@ export default function ComponentMenu(){
                 </div>
                 <article>
                     <div className={style.logo}>
-                        <img src="/images/logo/logo.jpg" alt="Logo app"/>
+                        <Image src="/images/logo/logo.jpg" alt="Logo app" width={(is_mobil_img)? 50 : 70} height={(is_mobil_img)? 50 : 70}/>
                     </div>
                     <div className={style.items}>
                         <Link href="/" >

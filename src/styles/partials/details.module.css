@@ -1,0 +1,113 @@
+.container{
+    padding: 100px 0px 30px 0px;
+    max-width: 1400px;
+    margin: auto;
+}
+.container .title{
+    text-align: center;
+    color: var(--color-text-primary);
+    font-size: 20px;
+    padding: 30px 10px 35px 10px;
+    border-bottom: 0.1px solid var(--color-font-tertiary);
+}
+.container .items{
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    column-gap: 20px;
+}
+.container .items .item .subtitle{
+    color: var(--color-text-secondary);
+    font-size: 25px;
+    font-weight: 600;
+}
+.container .items .item p{
+    margin-top: 15px;
+    color: var(--color-text-primary);
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    font-family: Arial, Helvetica;
+    line-height: 22px;
+}
+.container .items .item .list{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .items .item .list a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition-duration: 400ms;
+}
+.container .items .item .list span{
+    padding-top: 1px;
+}
+.container .items .item .list a:hover{
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    color: var(--color-text-secondary);
+}
+.container .items .item .data{
+    margin-top: 15px;
+    color: var(--color-text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container .items .item .data span{
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    font-family: Arial, Helvetica;
+}
+.container .items .item .data ion-icon{
+    width: 20px;
+    height: 20px;
+    color: var(--color-text-secondary);
+}
+.container .footer{
+    border-top: 0.1px solid var(--color-font-tertiary);
+    padding: 40px;
+    display: grid;
+    place-items: center;
+    gap: 13px;
+}
+.container .footer span{
+    letter-spacing: 0.3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-text-primary);
+    text-align: center;
+}
+.container .footer span:nth-child(1){
+    font-size: 14px;
+}
+.container .footer span:nth-child(2){
+    font-size: 16px;
+}
+.container .footer span:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+.container .footer span:nth-child(3) ion-icon{
+    width: 18px;
+    height: 18px;
+    color: var(--color-text-secondary);
+}
+@media (max-width : 1000px){
+    .container .items{
+        padding: 50px 10px;
+        row-gap: 30px;
+    }
+}
+@media (max-width : 410px){
+    .container .title{
+        font-size: 15px;
+    }
+}

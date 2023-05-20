@@ -1,0 +1,94 @@
+.container{
+    padding: 100px 30px 30px 30px;
+    max-width: 1400px;
+    margin: auto;
+}
+.container h1{
+    margin-top: 24px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    padding: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-text-secondary);
+}
+.container .list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px 15px;
+    justify-items: center;
+}
+.container .card{
+    border-radius: 10px;
+    background-color: var(--color-font-primary);
+}
+.container .card .description{
+    display: flex;
+    justify-content: space-between;
+}
+.container .card img:hover{
+    cursor: pointer;
+}
+.container .card img:hover ~ .description span{
+    opacity: 1;
+}
+.container .card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.container .card span{
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.5;
+    padding: 0px 1px;
+}
+.container .card .add_cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    padding: 4px 3px;
+    border-radius: 2px;
+    margin-top: 5px;
+    border: 0.1px solid var(--color-font-fifth);
+    color: var(--color-text-primary);
+}
+.container .card .add_cart span{
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .card .add_cart ion-icon{
+    width: 18px;
+    height: 18px;
+}
+.container .card .add_cart:hover{
+    cursor: pointer;
+}
+.container .card .add_cart:hover span, .container .card .add_cart:hover ion-icon{
+    color: var(--color-font-fifth);
+}
+@media (max-width : 410px){
+    .container{
+        padding: 100px 0px 0px 0px;
+    }
+    .container .list{
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        row-gap: 15px;
+    }
+    .container .card{
+        border-radius: 0px;
+        border: 0px;
+    }
+    .container .card img{
+        border-radius: 0px;
+    }
+}

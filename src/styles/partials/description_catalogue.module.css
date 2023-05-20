@@ -1,0 +1,249 @@
+.container{
+    padding: 100px 20px 0px 20px;
+    margin: auto;
+    max-width: 1400px;
+}
+.container .presentation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.container .presentation .menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-text-primary);
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px 0px;
+}
+.container .presentation .menu a:nth-child(1){
+    text-decoration: none;
+    color: var(--color-text-secondary);
+}
+.container .presentation .data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container .presentation .data .details{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .presentation .data .details h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
+}
+.container .presentation .data .details p{
+    font-size: 25px;
+    color: var(--color-text-primary);
+}
+.container .presentation .data .details a{
+    margin-top: 50px;
+    padding: 12px 0px 9px 0px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    border: none;
+    background-color: var(--color-text-secondary);
+    color: var(--color-font-primary);
+    transition-duration: 400ms;
+}
+.container .presentation .data .details a:hover{
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    opacity: 0.7;
+}
+.container .presentation .data .img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container .presentation .data .img img{
+    width: 650px;
+    height: 400px;
+    border-radius: 3px;
+}
+.container .description{
+    padding: 20px 10px;
+    background-color: var(--color-text-primary);
+}
+.container .description h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.container .description .items{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(435px,1fr));
+    grid-gap: 30px;
+}
+.container .description .items .item{
+    display: flex;
+    gap: 15px;
+}
+.container .description .items .item .icon{
+    padding: 18px 20px;
+    border-radius: 50%;
+    background-color: var(--color-text-secondary);
+}
+.container .description .items .item .icon ion-icon{
+    min-width: 30px;
+    min-height: 30px;
+}
+.container .description .items .item .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.container .description .items .item .info span{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-font-primary);
+} 
+.container .data .items{
+    padding: 80px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+.container .data .items .item{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 0px;
+    border: 0.1px solid var(--color-text-secondary);
+    border-radius: 5px;
+    background-color: var(--color-font-primary);
+    padding-right: 7px;
+}
+.container .data .items .item:hover{
+    cursor: pointer;
+    background-color: var(--color-text-secondary);
+    box-shadow: 0px 5px 14px 0px var(--color-text-secondary);
+}
+.container .data .items .item .description{
+    border-radius: 5px;
+    display: grid;
+    padding: 20px 5px 10px 7px;
+    justify-content: space-between;
+    grid-template-rows: 5.8fr 1fr;
+    background-color: var(--color-font-primary);
+}
+.container .data .items .item .description div h2{
+    color: var(--color-text-primary);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .data .items .item .description div p{
+    margin-top: 10px;
+    color: var(--color-text-primary);
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .data .items .item .description div:nth-child(2){
+    padding-top: 2.3px;
+}
+.container .data .items .item .img{
+    display: grid;
+    place-items: center;
+}
+.container .data .items .item .img img{
+    width: 200px;
+    height: 160px;
+    border-radius: 3px;
+}
+.container .data .items .item a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+@media (max-width : 915px){
+    .container .presentation .data .img img{
+        width: 300px;
+        height: 200px;
+    }
+    .container .presentation .data .details h2{
+        font-size: 25px;
+    }
+    .container .presentation .data .details p{
+        font-size: 20px;
+    }
+    .container .presentation .data .details{
+        padding: 0px;
+    }
+    .container .description .items{
+        padding: 20px 0px;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-gap: 20px;
+    }
+    .container .description h3{
+        font-size: 20px;
+    }
+}
+@media (max-width : 550px){
+    .container .presentation .data .img img{
+        width: 250px;
+        height: 150px;
+    }
+    .container .presentation .data .details h2{
+        font-size: 20px;
+    }
+    .container .presentation .data .details p{
+        font-size: 10px;
+    }
+    .container{
+        padding: 20px 10px;
+    }
+    .container .presentation .data .details a{
+        margin-top: 40px;
+        padding: 8px 0px 6px 0px;
+        width: 100px;
+        font-size: 9px;
+    }
+    .container .description .items .item .icon{
+        padding: 12px 14px;
+    }
+    .container .description .items .item .icon ion-icon{
+        width: 23px;
+        height: 23px;
+    }
+    .container .description .items .item .info span{
+        font-size: 15px;
+    }
+}
+@media (max-width : 380px){
+    .container .presentation .data .img img{
+        width: 200px;
+        height: 120px;
+    }
+    .container .presentation .data .details h2{
+        font-size: 18px;
+    }
+    .container .presentation .data .details p{
+        font-size: 8px;
+    }
+    .container .presentation .data .details a{
+        margin-top: 20px;
+        padding: 6px 0px 5px 0px;
+        width: 80px;
+        font-size: 7px;
+    }
+}

@@ -1,0 +1,177 @@
+.container_cards{
+    background-color: var(--color-font-secondary)
+}
+.container_location{
+    background-color: var(--color-font-primary);
+}
+.container_juices{
+    background-color: var(--color-font-tertiary);
+}
+.container_location .content_location, .container_cards .content_cards, .container_juices .content_juices{
+    max-width: 1400px;
+    margin: auto;
+}
+.container_cards .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(420px,1fr));
+    grid-gap: 25px 20px;
+    padding: 60px 65px;
+    margin-top: 50px;
+}
+.container_cards .cards .item{
+    border-radius: 3px;
+    padding: 20px 30px;
+    background-color: var(--color-font-primary);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2.6fr;
+    gap: 5px;
+}
+.container_cards .cards .item .icon{
+    text-align: center;
+}
+.container_cards .cards .item ion-icon{
+    width: 90px;
+    height: 90px;
+    color: var(--color-text-secondary);
+}
+.container_cards .cards .item .description{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.container_cards .cards .item .description span:nth-child(1){
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+.container_cards .cards .item .description span:nth-child(2){
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-text-primary);
+}
+.container_location .location{
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-gap: 25px;
+    background-color: var(--color-font-primary);
+}
+.container_location .location .description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container_location .location .description h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+.container_location .location .description p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    color: var(--color-text-primary);
+}
+.container_location .location .description a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+.container_location .location .img{
+    text-align: center;
+}
+.container_location .location .img img{
+    width: 300px;
+    height: 300px;
+}
+.container_juices .juices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    padding: 50px 10px;
+    margin-bottom: 50px;
+}
+.container_juices .juices h4{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-text-secondary);
+}
+.container_juices .juices p{
+    color: var(--color-text-primary);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 60px;
+}
+@media (max-width : 990px){
+    .container_cards .cards{
+        padding: 60px 10px;
+    }
+    .container_location .location .img img{
+        width: 400px;
+    }
+    .container_location .location .description{
+        gap: 0px;
+    }
+}
+@media (max-width : 800px){
+    .container_location .location{
+        grid-template-columns: 1fr;
+    }
+    .container_location .location .img{
+        text-align: center;
+    }
+}
+@media (max-width : 750px){
+    .container_juices .juices h4{
+        font-size: 30px;
+    }
+    .container_juices .juices p{
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width : 450px){
+    .container_cards .cards{
+        grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+        row-gap: 3px;
+        padding: 30px 3px;
+    }
+    .container_cards .cards .item{
+        padding: 15px 10px;
+        grid-template-columns: 1fr;
+        border-radius: 0px;
+    }
+    .container_cards .cards .item ion-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .container_cards .cards .item .description span:nth-child(1){
+        font-size: 20px;
+    }
+    .container_cards .cards .item .description span:nth-child(2){
+        font-size: 13px;
+    }
+    .container_location .location{
+        padding: 50px 10px;
+    }
+    .container_location .location .img img{
+        width: 298px;
+    }
+    .container_juices .juices p{
+        margin-bottom: 20px;
+    }
+}

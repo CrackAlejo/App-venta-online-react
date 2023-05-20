@@ -1,0 +1,29 @@
+:root{
+    --color-font-primary : black;
+    --color-font-secondary : rgba(255, 255, 255, 0.753);
+    --color-font-tertiary : rgb(31, 29, 29);
+    --color-font-room : rgb(213, 146, 20);
+    --color-font-fifth : rgb(85, 222, 72);
+    --color-font-sixth : rgb(43, 41, 41);
+    --color-text-primary : white;
+    --color-text-secondary : #a2a23ecb;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--color-font-primary);
+}
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--color-text-secondary);
+}
+body::-webkit-scrollbar-thumb:hover{
+    border-radius: 10px;
+}

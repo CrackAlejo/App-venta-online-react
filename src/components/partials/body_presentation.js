@@ -68,7 +68,7 @@ export default function ComponentBodyPresentation(){
                             </Link>
                         </div>
                         <div className={style.img}>
-                            <Image src="/images/logo/logo.jpg" alt="Logo app" width={700} height={700} />
+                            <Image src="/images/logo/Logo.jpg" alt="Logo app" width={700} height={700} />
                         </div>
                     </article>
                 </article>

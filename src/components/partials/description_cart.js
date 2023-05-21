@@ -17,16 +17,17 @@ export default function ComponentDescriptionCart(){
 
     const amount_dishes = (product_selected,value) => {
         global_context.products_cart.filter(product => product == product_selected).map(product => {
-            product.amount += (value)? 1 : -1
+            product.amount = (value)? product.amount + 1 : product.amount - 1
         })
-        setTotal(total + product_selected.price);
+        setTotal((value)? (total + product_selected.price) : (total - product_selected.price));
     }
 
     useEffect(() => {
         const calculate_total = () => {
             let new_total = 0;
             global_context.products_cart.map((product) => {
-                new_total += product.price * product.amount
+                new_total += product.price * product.amount,
+                console.log(product.amount)
             })
             setTotal(new_total);
         }

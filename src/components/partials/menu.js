@@ -64,7 +64,7 @@ export default function ComponentMenu(){
                             <ion-icon name="easel-outline"></ion-icon>
                             <span>EMPRESA</span>
                         </Link>
-                        <Link href="/products">
+                        <Link href="/products/[category]" as={"/products/all"}>
                             <ion-icon name="pulse-outline"></ion-icon>
                             <span>PRODUCTOS</span>
                         </Link>

@@ -32,10 +32,8 @@
 .menu .view_menu{
     top: 91px;
     animation : animate_toggle 0.5s linear;
-}
-.menu .close_menu{
-    top: -300px;
-    animation : animate_toggle_close 0.5s linear;
+    padding-top: 20px;
+    padding-right: 10px;
 }
 .menu .hidden_menu{
     display: none;
@@ -107,14 +105,6 @@
     cursor: pointer;
     transition-timing-function: ease-in-out;
     color: var(--color-text-secondary);
-}
-@keyframes animate_toggle_close{
-    0%{
-        top: 91px;
-    }
-    100%{
-        top: -300px;
-    }
 }
 @keyframes animate_toggle{
     0%{

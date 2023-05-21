@@ -7,14 +7,14 @@ import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive'
 
 export default function ComponentMenu(){
-    const [selected_menu,setSelected_menu] = useState(null);
+    const [selected_menu,setSelected_menu] = useState(false);
 
     const is_mobil = useMediaQuery({ query: '(min-width: 850px)' })
     const is_mobil_img = useMediaQuery({ query: '(max-width: 500px)' })
 
     useEffect(() => {
         if(selected_menu){
-            setSelected_menu(null);
+            setSelected_menu(false);
         }
     },[is_mobil]);
 
@@ -54,7 +54,7 @@ export default function ComponentMenu(){
                         </Link>
                     </div>
                 </article>
-                <div className={(selected_menu==null)? style.hidden_menu : (selected_menu)? style.view_menu : style.close_menu}>
+                <div className={(selected_menu)? style.view_menu : style.hidden_menu}>
                     <div>
                         <Link href="/">
                             <ion-icon name="home-outline"></ion-icon>
@@ -78,7 +78,9 @@ export default function ComponentMenu(){
                         </Link>
                     </div>
                     <div className={style.icon}>
-                        <ion-icon name="reader-outline"></ion-icon>
+                        <Link href="/cart">
+                            <ion-icon className={style.trolley} name="cart-outline"></ion-icon>
+                        </Link>
                     </div>
                 </div>
             </article>

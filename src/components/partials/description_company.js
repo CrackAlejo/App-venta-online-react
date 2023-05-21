@@ -8,7 +8,7 @@ export default function ComponentDescriptionCompany(){
             <article className={style.content}>
                 <div className={style.data}>
                     <div className={style.img}>
-                        <Image src="/images/logo/logo.jpg" alt="Logo app" width={700} height={700}/>
+                        <Image src="/images/logo/Logo.jpg" alt="Logo app" width={700} height={700}/>
                     </div>
                     <div className={style.description}>
                         <h3>Comidas lo mejor</h3>

@@ -1,61 +1,61 @@
 const list_breakfasts = [
     {
         img : "/images/breakfasts/img1.jpg",
-        subtitle : "Desayuno",
+        subtitle : "Cafe con medialunas",
         price : 1200,
         amount : 1
     },
     {
         img : "/images/breakfasts/img2.webp",
-        subtitle : "Desayuno",
+        subtitle : "Cafe con tostadas",
         price : 1300,
         amount : 1
     },
     {
         img : "/images/breakfasts/img3.jpg",
-        subtitle : "Desayuno",
+        subtitle : "Cafe con tostadas",
         price : 1000,
         amount : 1
     },
     {
         img : "/images/breakfasts/img4.jpg",
-        subtitle : "Desayuno",
+        subtitle : "Cafe con medialunas",
         price : 1500,
         amount : 1
     },
     {
         img : "/images/breakfasts/img5.jpg",
-        subtitle : "Desayuno",
+        subtitle : "Cafe con medialunas",
         price : 1700,
         amount : 1
     },
     {
         img : "/images/breakfasts/img6.jpg",
-        subtitle : "Desayuno",
+        subtitle : "Desayuno saludable",
         price : 1750,
         amount : 1
     },
     {
         img : "/images/breakfasts/img7.png",
-        subtitle : "Desayuno",
+        subtitle : "Desayuno saludable",
         price : 1100,
         amount : 1
     },
     {
         img : "/images/breakfasts/img8.jpg",
-        subtitle : "Desayuno",
+        subtitle : "Desayuno saludable",
         price : 1050,
         amount : 1
     },
     {
         img : "/images/breakfasts/img9.jpg",
-        subtitle : "Desayuno",
+        subtitle : "Desayuno saludable",
         price : 1250,
         amount : 1
     },
     {
         img : "/images/breakfasts/img10.jpg",
-        subtitle : "Desayuno",
+        subtitle : "Desayuno saludable",
         price : 1300,
         amount : 1
     }
@@ -101,61 +101,61 @@ const list_desserts = [
     },
     {
         img : "/images/desserts/img2.jpg",
-        subtitle : "Postre light",
+        subtitle : "Tarta con creda de leche",
         price : 1200,
         amount : 1
     },
     {
         img : "/images/desserts/img3.jpg",
-        subtitle : "Postre light",
+        subtitle : "Postre de cerezas",
         price : 2200,
         amount : 1
     },
     {
         img : "/images/desserts/img4.jpg",
-        subtitle : "Postre light",
+        subtitle : "Postre de fresas",
         price : 2300,
         amount : 1
     },
     {
         img : "/images/desserts/img5.jpg",
-        subtitle : "Postre light",
+        subtitle : "Postre de fresas",
         price : 2400,
         amount : 1
     },
     {
         img : "/images/desserts/img6.jpg",
-        subtitle : "Postre light",
+        subtitle : "Postre de fresas",
         price : 1700,
         amount : 1
     },
     {
         img : "/images/desserts/img7.jpg",
-        subtitle : "Postre light",
+        subtitle : "Torta",
         price : 1600,
         amount : 1
     },
     {
         img : "/images/desserts/img8.jpg",
-        subtitle : "Postre light",
+        subtitle : "Pastel de chocolate",
         price : 1560,
         amount : 1
     },
     {
         img : "/images/desserts/img9.png",
-        subtitle : "Postre light",
+        subtitle : "Postres de crema",
         price : 1670,
         amount : 1
     },
     {
         img : "/images/desserts/img10.jpg",
-        subtitle : "Postre light",
+        subtitle : "Baso de chocolate y crema",
         price : 1340,
         amount : 1
     },
     {
         img : "/images/desserts/img11.jpg",
-        subtitle : "Postre light",
+        subtitle : "Postre de naranja",
         price : 1150,
         amount : 1
     }
@@ -163,43 +163,43 @@ const list_desserts = [
 const list_ice_crems = [
     {
         img : "/images/ice_crems/img3.webp",
-        subtitle : "Helado",
+        subtitle : "Chocolate blanco",
         price : 300,
         amount : 1
     },
     {
         img : "/images/ice_crems/img4.jpg",
-        subtitle : "Helado",
+        subtitle : "Bainilla",
         price : 500,
         amount : 1
     },
     {
         img : "/images/ice_crems/img5.webp",
-        subtitle : "Helado",
+        subtitle : "Combo de sabores",
         price : 300,
         amount : 1
     },
     {
         img : "/images/ice_crems/img6.jpg",
-        subtitle : "Helado",
+        subtitle : "Chocolate amargo",
         price : 500,
         amount : 1
     },
     {
         img : "/images/ice_crems/img7.webp",
-        subtitle : "Helado",
+        subtitle : "Dulce de leche",
         price : 600,
         amount : 1
     },
     {
         img : "/images/ice_crems/img8.jpg",
-        subtitle : "Helado",
+        subtitle : "Chocolate con granas",
         price : 800,
         amount : 1
     },
     {
         img : "/images/ice_crems/img9.jpg",
-        subtitle : "Helado",
+        subtitle : "Limon",
         price : 450,
         amount : 1
     }
@@ -329,37 +329,37 @@ const list_toasts = [
 const list_salads = [
     {
         img : "/images/salads/img1.jpeg",
-        subtitle : "Ensalada",
+        subtitle : "Ensalada con fideos",
         price : 800,
         amount : 1
     },
     {
         img : "/images/salads/img2.jpg",
-        subtitle : "Ensalada",
+        subtitle : "Ensalada magnifica",
         price : 560,
         amount : 1
     },
     {
         img : "/images/salads/img3.webp",
-        subtitle : "Ensalada",
+        subtitle : "Ensalada con queso",
         price : 670,
         amount : 1
     },
     {
         img : "/images/salads/img4.webp",
-        subtitle : "Ensalada",
+        subtitle : "Ensalada criolla",
         price : 700,
         amount : 1
     },
     {
         img : "/images/salads/img5.jpg",
-        subtitle : "Ensalada",
+        subtitle : "Ensalada con cherris",
         price : 600,
         amount : 1
     },
     {
         img : "/images/salads/img6.jpeg",
-        subtitle : "Ensalada",
+        subtitle : "Ensalada con fresas",
         price : 760,
         amount : 1
     }
@@ -405,37 +405,37 @@ const list_meats = [
 const list_burgers = [
     {
         img : "/images/burgers/img1.jpg",
-        subtitle : "Burger",
+        subtitle : "Burger con queso",
         price : 1000,
         amount : 1
     },
     {
         img : "/images/burgers/img2.jpg",
-        subtitle : "Burger",
+        subtitle : "Burger con queso y fritas",
         price : 1400,
         amount : 1
     },
     {
         img : "/images/burgers/img3.jpg",
-        subtitle : "Burger",
+        subtitle : "Burger big mac",
         price : 1500,
         amount : 1
     },
     {
         img : "/images/burgers/img4.jpg",
-        subtitle : "Burger",
+        subtitle : "Burgers con queso",
         price : 1700,
         amount : 1
     },
     {
         img : "/images/burgers/img5.jpg",
-        subtitle : "Burger",
+        subtitle : "Burger magnifica",
         price : 1320,
         amount : 1
     },
     {
         img : "/images/burgers/img6.jpg",
-        subtitle : "Burger",
+        subtitle : "Burger cuarto de libra",
         price : 1400,
         amount : 1
     }
